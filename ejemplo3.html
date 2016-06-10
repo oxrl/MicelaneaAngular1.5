@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="controller2.js"></script>
+</head>
+<body ng-app="calculadora">
+
+<div ng-controller="sumadora">
+    <button ng-click='suma()'>Sumar</button>
+    <input type = "text" ng-model="n1">
+    <input type = "text" ng-model="n2">
+     =
+    <label>{{sum}}</label>
+</div>
+<div ng-controller="restadora">
+    <button ng-click="resta()">Resta</button>
+    <input type="text" ng-model="n1">
+    <input type="text" ng-model="n2">
+    =
+    <label>{{res}}</label>
+</div>
+
+
+
+</body>
+</html>

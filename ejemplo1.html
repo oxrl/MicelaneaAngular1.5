@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="TestAPP1">
+
+<div ng-controller="PrimerControlador">
+
+Your Name :
+ <input type = "text" ng-model="username">
+ <button ng-click='sayHello()'>Greet</button>
+<hr>
+    {{greeting}}
+</div>
+</body>
+</html>
