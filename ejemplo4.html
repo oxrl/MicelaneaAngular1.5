@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="controller3.js"></script>
+</head>
+<body ng-app="AppPila">
+
+<div ng-controller="ctl1">
+        Nombre : <input type="text" ng-model="nuevoComentario.username">
+        <br/>
+        Comentario:<input type="text" ng-model="nuevoComentario.comentario">
+        <br/>
+        <button ng-click="addComentario()"> Agregar Comentario</button>
+        <ul>
+            <li ng-repeat="comentario in comentarios">
+                {{comentario.comentario}}--{{comentario.username}}
+            </li>
+        </ul>
+</div>
+</body>
+</html>
