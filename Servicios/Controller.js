@@ -1,6 +1,6 @@
 angular.module("ToDoList", ["LocalStorageModule"])
 .service('ToDoService', function(localStorageService){
-/* Autor : OXRL */
+/* Autor : OXRL*/
 /*Lo agregamos al objeto que el service está construyendo*/
 	this.key = "angular-todolist";
 
